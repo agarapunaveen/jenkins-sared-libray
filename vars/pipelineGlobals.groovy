@@ -1,11 +1,11 @@
-static final string region(){
+static final String region(){
     return "us-east-1"
 }
 
-static final string nexusURL(){
+static final String nexusURL(){
     return "nexus.naveencloud.online:8081"
 }
 
-static final string accountId(){
+static final String accountId(){
     return "211125718262"
 }
