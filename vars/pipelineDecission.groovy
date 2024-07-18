@@ -1,13 +1,14 @@
+#!groovy
 def decidepipeline(Map configMap){
     type = configMap.get("type")
     switch(type) {
         case "nodejsEKS":
               nodejsEKS(configMap)
               break
-        case "nodejsVM"
+        case "nodejsVM":
               nodejsVM(configMap)
               break                  
-        break
+        default:
               error "type is not matched"
               break
     }
