@@ -13,11 +13,11 @@ def call (Map configMap){
     
         environment{
         def appVersion = ''
-        def nexusUrl= pipelineGlobals.nexusURL()
-        def region= pipelineGlobals.region()
-        def account_id=pipelineGlobals.accountId()
-        def component=configMap("component")
-        def project=configMap("project")
+        def nexusUrl = pipelineGlobals.nexusURL()
+        def region = pipelineGlobals.region()
+        def account_id = pipelineGlobals.accountId()
+        def component = configMap.get("component")
+        def project = configMap.get("project")
         }
         stages {
             stage('read the version'){
